@@ -1,8 +1,10 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -11,15 +13,71 @@
             <objects>
                 <viewController id="01J-lp-oVM" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="tFH-Xe-v2E">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <view key="tableFooterView" contentMode="scaleToFill" id="pgT-FT-hK6">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="852"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LoadingScreenBacGround" translatesAutoresizingMaskIntoConstraints="NO" id="xR5-Eh-LY2">
+                                            <rect key="frame" x="0.0" y="-45" width="414" height="897"/>
+                                        </imageView>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo" translatesAutoresizingMaskIntoConstraints="NO" id="kYr-FU-JVF">
+                                            <rect key="frame" x="88" y="216" width="238" height="238"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="238" id="eZ7-U0-HyY"/>
+                                                <constraint firstAttribute="width" constant="238" id="vjq-oB-xvK"/>
+                                            </constraints>
+                                        </imageView>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Loding icon" translatesAutoresizingMaskIntoConstraints="NO" id="kxv-4O-eon">
+                                            <rect key="frame" x="190" y="592" width="34" height="34"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="34" id="6ek-tB-Xmw"/>
+                                                <constraint firstAttribute="height" constant="34" id="AkE-cB-Nm2"/>
+                                                <constraint firstAttribute="height" constant="34" id="dN4-DJ-AkO"/>
+                                                <constraint firstAttribute="width" constant="34" id="nwF-SC-dwN"/>
+                                            </constraints>
+                                        </imageView>
+                                    </subviews>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    <constraints>
+                                        <constraint firstItem="kYr-FU-JVF" firstAttribute="top" secondItem="pgT-FT-hK6" secondAttribute="top" multiplier="0.5" constant="216" id="6ix-Vi-goV"/>
+                                        <constraint firstItem="kxv-4O-eon" firstAttribute="centerX" secondItem="pgT-FT-hK6" secondAttribute="centerX" id="BQ8-60-VFk"/>
+                                        <constraint firstAttribute="bottom" secondItem="xR5-Eh-LY2" secondAttribute="bottom" id="F3v-F4-0Zy"/>
+                                        <constraint firstItem="xR5-Eh-LY2" firstAttribute="leading" secondItem="pgT-FT-hK6" secondAttribute="leading" id="JFw-B4-wcX"/>
+                                        <constraint firstAttribute="trailing" secondItem="xR5-Eh-LY2" secondAttribute="trailing" id="Kxt-2y-Nzb"/>
+                                        <constraint firstItem="kxv-4O-eon" firstAttribute="top" secondItem="kYr-FU-JVF" secondAttribute="bottom" multiplier="0.7" constant="274" id="Tvf-KZ-T25"/>
+                                        <constraint firstItem="xR5-Eh-LY2" firstAttribute="top" secondItem="pgT-FT-hK6" secondAttribute="top" constant="-45" id="Zkh-Sb-nfa"/>
+                                        <constraint firstItem="kYr-FU-JVF" firstAttribute="centerX" secondItem="pgT-FT-hK6" secondAttribute="centerX" id="ndl-zz-oS9"/>
+                                    </constraints>
+                                </view>
+                            </tableView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="tFH-Xe-v2E" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="5Om-s6-iK4"/>
+                            <constraint firstAttribute="bottom" secondItem="tFH-Xe-v2E" secondAttribute="bottom" id="H3d-kO-nmI"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="tFH-Xe-v2E" secondAttribute="trailing" id="IdF-mE-USA"/>
+                            <constraint firstItem="tFH-Xe-v2E" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="JFe-15-eNg"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="53" y="375"/>
+            <point key="canvasLocation" x="52.173913043478265" y="375"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="LoadingScreenBacGround" width="375" height="812"/>
+        <image name="Loding icon" width="36" height="33"/>
+        <image name="Logo" width="238" height="238"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>

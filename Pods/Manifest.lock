@@ -1,0 +1,24 @@
+PODS:
+  - MBProgressHUD (1.2.0)
+  - ReadMoreTextView (3.0.1)
+  - SideMenu (6.5.0)
+
+DEPENDENCIES:
+  - MBProgressHUD (~> 1.2.0)
+  - ReadMoreTextView
+  - SideMenu (~> 6.0)
+
+SPEC REPOS:
+  trunk:
+    - MBProgressHUD
+    - ReadMoreTextView
+    - SideMenu
+
+SPEC CHECKSUMS:
+  MBProgressHUD: 3ee5efcc380f6a79a7cc9b363dd669c5e1ae7406
+  ReadMoreTextView: 19147adf93abce6d7271e14031a00303fe28720d
+  SideMenu: f583187d21c5b1dd04c72002be544b555a2627a2
+
+PODFILE CHECKSUM: 21619bff56188ff26ba5f56165ec9fda100f7f73
+
+COCOAPODS: 1.11.2

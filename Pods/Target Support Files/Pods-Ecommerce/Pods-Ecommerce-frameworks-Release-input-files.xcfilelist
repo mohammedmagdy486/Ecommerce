@@ -1,0 +1,4 @@
+${PODS_ROOT}/Target Support Files/Pods-Ecommerce/Pods-Ecommerce-frameworks.sh
+${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework
+${BUILT_PRODUCTS_DIR}/ReadMoreTextView/ReadMoreTextView.framework
+${BUILT_PRODUCTS_DIR}/SideMenu/SideMenu.framework

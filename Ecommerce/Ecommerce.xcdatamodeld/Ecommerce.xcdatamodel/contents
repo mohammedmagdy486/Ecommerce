@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="19574" systemVersion="21E230" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="BestItemCD" representedClassName="BestItemCD" syncable="YES" codeGenerationType="class">
+        <attribute name="itemImage" optional="YES" attributeType="String"/>
+        <attribute name="itemName" optional="YES" attributeType="String"/>
+        <attribute name="itemPrice" optional="YES" attributeType="Float" defaultValueString="0" usesScalarValueType="YES"/>
+    </entity>
+    <entity name="CartCellCD" representedClassName="CartCellCD" syncable="YES" codeGenerationType="class">
+        <attribute name="itemColor" optional="YES" attributeType="String"/>
+        <attribute name="itemDescription" optional="YES" attributeType="String"/>
+        <attribute name="itemImage" optional="YES" attributeType="String"/>
+        <attribute name="itemName" optional="YES" attributeType="String"/>
+        <attribute name="itemPrice" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="itemPriceBeforeDiscount" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="itemSize" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="FeaturedItemCD" representedClassName="FeaturedItemCD" syncable="YES" codeGenerationType="class">
+        <attribute name="itemImage" optional="YES" attributeType="String"/>
+        <attribute name="itemName" optional="YES" attributeType="String"/>
+        <attribute name="itemPrice" optional="YES" attributeType="Float" defaultValueString="0" usesScalarValueType="YES"/>
+    </entity>
+    <elements>
+        <element name="BestItemCD" positionX="-54" positionY="18" width="128" height="74"/>
+        <element name="CartCellCD" positionX="-36" positionY="45" width="128" height="134"/>
+        <element name="FeaturedItemCD" positionX="-63" positionY="-18" width="128" height="74"/>
+    </elements>
+</model>
